@@ -1,0 +1,75 @@
+//
+//  BrowseGeneList.h
+//  SGD_2
+//
+//  Copyright 2011 Optra Systems. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "BrowseGeneList.h"
+
+@class BrowseGeneList;
+@interface BrowseGeneList : UIViewController 
+{
+    NSMutableArray              *allFeatsOfFeatureType;
+    NSMutableArray              *resAllFeatsOfFeatureType;
+	
+	NSManagedObjectContext      *managedObjectContext;
+	
+	BrowseGeneList              *browseFeatureDetailsVC;    
+    
+    UIButton                    *FavButton;
+    UIButton                    *CancelButton;
+    
+    BOOL						inPseudoEditMode;
+    UIImage						*selectedImage;
+	UIImage						*unselectedImage;
+    NSMutableArray				*selectedArray;
+    UIActivityIndicatorView		*activityIndView;
+    IBOutlet  UITableView       *tempTableview;   
+    
+    int page;
+    int tpages;
+    int adjacents;
+    BOOL isFetching;
+    NSInteger firstScrollOffset;
+    int cntScroll;
+    
+    UIActivityIndicatorView     *progressInd;
+	UIView                      *fadeView;
+    
+    int currentLastCell;
+    
+    BOOL isScroll;
+    
+}
+@property (nonatomic, assign) BOOL isScroll;
+@property (nonatomic, assign) int currentLastCell;
+@property (nonatomic, retain) UIActivityIndicatorView *progressInd;
+@property (nonatomic, retain) NSMutableArray          *allFeatsOfFeatureType;
+@property (nonatomic, retain) NSMutableArray          *resAllFeatsOfFeatureType;
+
+@property (nonatomic, retain) NSManagedObjectContext  *managedObjectContext;
+
+@property (nonatomic, retain) BrowseGeneList          *browseFeatureDetailsVC;
+
+
+@property (nonatomic, retain) NSMutableArray          *selectedArray;
+
+@property BOOL inPseudoEditMode;
+
+@property (nonatomic, retain) UIImage                 *selectedImage;
+@property (nonatomic, retain) UIImage                 *unselectedImage;
+@property (nonatomic, retain) UIButton                *CancelButton;
+@property (nonatomic, retain) UIButton                *FavButton;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndView;
+
+-(void)pushedFavButton:(id)sender;
+-(void)pushedCancelButton:(id)sender;
+-(void)populateSelectedArray;
+-(void)addToFavourite;
+-(void)doInBackground;
+-(void)getdata;
+-(void)refreshTable;
+@end
+

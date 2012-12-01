@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+		<key>EXP</key>
+		<string>Inferred from Experiment</string>
+		<key>IDA</key>
+		<string>Inferred from Direct Assay</string>
+		<key>IPI</key>
+		<string>Inferred from Physical Interaction</string>
+		<key>IMP</key>
+		<string>Inferred from Mutant Phenotype</string>
+		<key>IGI</key>
+		<string>Inferred from Genetic Interaction</string>
+		<key>IEP</key>
+		<string>Inferred from Expression Pattern</string>
+		<key>ISS</key>
+		<string>Inferred from Sequence or Structural Similarity</string>
+		<key>ISO</key>
+		<string>Inferred from Sequence Orthology</string>
+		<key>ISA</key>
+		<string>Inferred from Sequence Alignment</string>
+		<key>ISM</key>
+		<string>Inferred from Sequence Mode</string>
+		<key>IGC</key>
+		<string>Inferred from Genomic Context</string>
+		<key>RCC</key>
+		<string>Inferred from Reviewed Computational Analysis</string>
+		<key>TAS</key>
+		<string>Traceable Author Statement</string>
+		<key>NAS</key>
+		<string>Non-Traceable Author Statement</string>
+		<key>IC</key>
+		<string>Inferred by Curator</string>
+		<key>ND</key>
+		<string>No biological Data available</string>
+		<key>IEA</key>
+		<string>Inferred from Electronic Annotation</string>
+</dict>
+</plist>

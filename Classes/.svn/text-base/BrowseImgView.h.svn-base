@@ -1,0 +1,22 @@
+//
+//  BrowseImgView.h
+//  SGD_2
+//
+//  Created by Vivek on 8/10/11.
+//  Copyright 2011 Optra Systems. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+
+@interface BrowseImgView : UIViewController<UIWebViewDelegate,UIAlertViewDelegate> {
+    
+    IBOutlet UIWebView               *wBrowseImg;
+    IBOutlet UIActivityIndicatorView *m_activity; 
+    
+}
+
+@property (nonatomic, retain) UIWebView               *wBrowseImg;
+@property (nonatomic, retain) UIActivityIndicatorView *m_activity;
+
+@end

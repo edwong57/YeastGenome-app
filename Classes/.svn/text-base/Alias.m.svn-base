@@ -1,0 +1,20 @@
+// 
+//  Alias.m
+//  SGD_2
+//
+//  Created by Vivek on 29/06/11.
+//  Copyright 2011 Optra Systems. All rights reserved.
+//
+
+#import "Alias.h"
+
+#import "Features.h"
+
+@implementation Alias 
+
+@dynamic dateCreated;
+@dynamic aliasName;
+@dynamic aliasType;
+@dynamic aliasToFeat;
+
+@end

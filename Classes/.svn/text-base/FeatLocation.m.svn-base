@@ -1,0 +1,23 @@
+// 
+//  FeatLocation.m
+//  SGD_2
+//
+//  Created by Vivek on 29/06/11.
+//  Copyright 2011 Optra Systems. All rights reserved.
+//
+
+#import "FeatLocation.h"
+
+#import "Features.h"
+
+@implementation FeatLocation 
+
+@dynamic strand;
+@dynamic coordVer;
+@dynamic maxCoord;
+@dynamic chromosome;
+@dynamic minCoord;
+@dynamic dateCreated;
+@dynamic locToFeat;
+
+@end

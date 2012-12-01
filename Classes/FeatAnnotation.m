@@ -1,0 +1,23 @@
+// 
+//  FeatAnnotation.m
+//  SGD_2
+//
+//  Created by Vivek on 29/06/11.
+//  Copyright 2011 Stanford University. All rights reserved.
+//
+
+#import "FeatAnnotation.h"
+
+#import "Features.h"
+
+@implementation FeatAnnotation 
+
+@dynamic dateCreated;
+@dynamic descriptions;
+@dynamic geneticPos;
+@dynamic qualifier;
+@dynamic featAttribute;
+@dynamic nameDescription;
+@dynamic annotToFeat;
+
+@end

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ARSWebServiceURL</key>
+	<string>http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=&lt;query+name=&quot;&quot;+model=&quot;genomic&quot;+view=&quot;ARS.featureType+ARS.secondaryIdentifier+ARS.symbol+ARS.primaryIdentifier+ARS.locations.start+ARS.locations.end+ARS.locations.strand+ARS.locations.locatedOn.primaryIdentifier+ARS.qualifier+ARS.featAttribute+ARS.description+ARS.name+ARS.sgdAlias&quot;</string>
+	<key>CentromereWebServiceURL</key>
+	<string>http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=&lt;query+name=&quot;&quot;+model=&quot;genomic&quot;+view=&quot;Centromere.featureType+Centromere.secondaryIdentifier+Centromere.symbol+Centromere.primaryIdentifier+Centromere.locations.start+Centromere.locations.end+Centromere.locations.strand+Centromere.locations.locatedOn.secondaryIdentifier+Centromere.qualifier+Centromere.featAttribute+Centromere.description+Centromere.name+Centromere.sgdAlias&quot;</string>
+	<key>TelomereWebServiceURL</key>
+	<string>http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=&lt;query+name=&quot;&quot;+model=&quot;genomic&quot;+view=&quot;Telomere.featureType+Telomere.secondaryIdentifier+Telomere.symbol+Telomere.primaryIdentifier+Telomere.locations.start+Telomere.locations.end+Telomere.locations.strand+Telomere.locations.locatedOn.primaryIdentifier+Telomere.qualifier+Telomere.featAttribute+Telomere.description+Telomere.name+Telomere.sgdAlias&quot;</string>
+	<key>TyElementWebServiceURL</key>
+	<string>http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=&lt;query+name=&quot;&quot;+model=&quot;genomic&quot;+view=&quot;Retrotransposon.featureType+Retrotransposon.secondaryIdentifier+Retrotransposon.symbol+Retrotransposon.primaryIdentifier+Retrotransposon.locations.start+Retrotransposon.locations.end+Retrotransposon.locations.strand+Retrotransposon.locations.locatedOn.primaryIdentifier+Retrotransposon.qualifier+Retrotransposon.featAttribute+Retrotransposon.description+Retrotransposon.name+Retrotransposon.sgdAlias&quot;</string>
+	<key>TyLTRWebServiceURL</key>
+	<string>http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=&lt;query+name=&quot;&quot;+model=&quot;genomic&quot;+view=&quot;LongTerminalRepeat.featureType+LongTerminalRepeat.secondaryIdentifier+LongTerminalRepeat.symbol+LongTerminalRepeat.primaryIdentifier+LongTerminalRepeat.locations.start+LongTerminalRepeat.locations.end+LongTerminalRepeat.locations.strand+LongTerminalRepeat.locations.locatedOn.primaryIdentifier+LongTerminalRepeat.qualifier+LongTerminalRepeat.featAttribute+LongTerminalRepeat.description+LongTerminalRepeat.name+LongTerminalRepeat.sgdAlias&quot;</string>
+	<key>GenesWebServiceURL</key>
+	<string>http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=&lt;query+name=&quot;&quot;+model=&quot;genomic&quot;+view=&quot;Gene.featureType+Gene.secondaryIdentifier+Gene.symbol+Gene.primaryIdentifier+Gene.locations.start+Gene.locations.end+Gene.locations.strand+Gene.locations.locatedOn.primaryIdentifier+Gene.qualifier+Gene.featAttribute+Gene.description+Gene.name+Gene.sgdAlias&quot;</string>
+</dict>
+</plist>

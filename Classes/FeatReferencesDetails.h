@@ -1,0 +1,52 @@
+//
+//  FeatReferencesDetails.h
+//  SGD_Vivek
+//
+//  Created by Vivek on 27/04/11.
+//  Copyright 2011 Stanford University. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "webServiceHelper.h"
+#import "Features.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
+
+#define kCellButtonTag		1000
+#define kCellLabelTag		1001
+#define kCellSquareTag      1002
+#define kCellFeatureNmTag   1003
+#define kCellGeneNmTag      1004
+
+
+@interface FeatReferencesDetails : UIViewController <UITableViewDelegate, UITableViewDataSource, DownloadCompleteDelegate, UIActionSheetDelegate,UIAlertViewDelegate, MFMailComposeViewControllerDelegate> 
+{
+	
+	UIAlertView					*progAlertView;
+	UIActivityIndicatorView		*activityIndView;
+	NSManagedObjectContext		*managedObjectContext;		
+	NSMutableArray				*allObjects;
+	UIButton					*EmailButton;
+	Features					*selectedFeature;  
+    IBOutlet UITableView        *tempTableview;
+    BOOL isPhysNotMapped;
+	MFMailComposeViewController *controller;
+
+}
+
+@property (nonatomic, assign) BOOL isPhysNotMapped;
+@property (nonatomic, retain) NSMutableArray          *allObjects;
+@property (nonatomic, retain) NSManagedObjectContext  *managedObjectContext;	
+
+@property (nonatomic, retain) UIAlertView             *progAlertView;
+@property (nonatomic, retain) UIActivityIndicatorView *activityIndView;
+@property (nonatomic, retain) Features                *selectedFeature;
+
+-(void)webServiceCall:(NSString *)webserviceName;
+-(void)getResultsAndInsert:(NSDictionary *)resultSet;
+-(void)createProgressionAlertWithMessage:(NSString *)message;
+-(void)finishedDownloading:(NSString *)strJSONResponse;
+
+-(IBAction)pushedEmailButton:(id)sender;
+
+@end

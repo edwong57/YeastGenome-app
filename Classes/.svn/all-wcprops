@@ -1,0 +1,449 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes
+END
+Phenotypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Phenotypes.h
+END
+add selected.png
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/add%20selected.png
+END
+Phenotypes.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Phenotypes.m
+END
+FeatGOTypeList.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGOTypeList.h
+END
+FeatGOTypeList.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGOTypeList.m
+END
+FeatListViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatListViewController.h
+END
+FeatAnnotation.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatAnnotation.h
+END
+FeatListViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatListViewController.m
+END
+FeatAnnotation.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatAnnotation.m
+END
+FeatInteractionDetails.xib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatInteractionDetails.xib
+END
+EmailViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/EmailViewController.xib
+END
+FeatInteractionDetails.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatInteractionDetails.h
+END
+BrowseImgView_iPhone.xib
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseImgView_iPhone.xib
+END
+BrowseGeneList.xib
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseGeneList.xib
+END
+Alias.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Alias.h
+END
+FeatInteractionDetails.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatInteractionDetails.m
+END
+Alias.m
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Alias.m
+END
+Interactions.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Interactions.h
+END
+Interactions.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Interactions.m
+END
+FeatLocation.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatLocation.h
+END
+StandardInfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/StandardInfo.h
+END
+FeatLocation.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatLocation.m
+END
+CustomURLConnection.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/CustomURLConnection.h
+END
+StandardInfo.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/StandardInfo.m
+END
+FeatManageData.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatManageData.h
+END
+CustomURLConnection.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/CustomURLConnection.m
+END
+proAlertView.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/proAlertView.h
+END
+staticFunctionClass.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/staticFunctionClass.h
+END
+MyUITextViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/MyUITextViewController.h
+END
+FeatManageData.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatManageData.m
+END
+staticFunctionClass.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/staticFunctionClass.m
+END
+proAlertView.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/proAlertView.m
+END
+BrowseImgView.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseImgView.h
+END
+SGD_2AppDelegate.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/SGD_2AppDelegate.h
+END
+MyUITextViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/MyUITextViewController.m
+END
+BrowseImgView.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseImgView.m
+END
+webServiceHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/webServiceHelper.h
+END
+SGD_2AppDelegate.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/SGD_2AppDelegate.m
+END
+Reachability.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Reachability.h
+END
+FeatureDetails.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatureDetails.h
+END
+webServiceHelper.m
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/webServiceHelper.m
+END
+Reachability.m
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/Reachability.m
+END
+FeatListViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatListViewController.xib
+END
+FeatureDetails.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatureDetails.m
+END
+FeatPhenoType.xib
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatPhenoType.xib
+END
+FeatGoDetails.xib
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGoDetails.xib
+END
+FeatInteractionList.xib
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatInteractionList.xib
+END
+FeatPhenoType.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatPhenoType.h
+END
+FeatGoDetails.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGoDetails.h
+END
+FeatInteractionList.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatInteractionList.h
+END
+FeatPhenoType.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatPhenoType.m
+END
+FeatGoDetails.m
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGoDetails.m
+END
+FeatInteractionList.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatInteractionList.m
+END
+FeatPhenoTypeDetails.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatPhenoTypeDetails.h
+END
+BrowseImgView_iPad.xib
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseImgView_iPad.xib
+END
+FeatReferencesDetails.xib
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatReferencesDetails.xib
+END
+FeatPhenoTypeDetails.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatPhenoTypeDetails.m
+END
+EmailViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/EmailViewController.h
+END
+FeatReferencesDetails.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatReferencesDetails.h
+END
+FavoritesListViewController.xib
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FavoritesListViewController.xib
+END
+EmailViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/EmailViewController.m
+END
+FeatReferencesDetails.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatReferencesDetails.m
+END
+BrowseGeneList.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseGeneList.h
+END
+FavoritesListViewController.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FavoritesListViewController.h
+END
+BrowseGeneList.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/BrowseGeneList.m
+END
+FavoritesListViewController.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FavoritesListViewController.m
+END
+StandardInfo.xib
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/StandardInfo.xib
+END
+SGD_2.sqlite
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/SGD_2.sqlite
+END
+StandardInfo_iPhone.xib
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/StandardInfo_iPhone.xib
+END
+FeatManageData.xib
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatManageData.xib
+END
+FeatGoTypeDetails.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGoTypeDetails.h
+END
+References.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/References.h
+END
+FeatGoTypeDetails.m
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/FeatGoTypeDetails.m
+END
+References.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/SGD/!svn/ver/636/Code/SGD_1.7/Classes/References.m
+END
