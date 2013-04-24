@@ -142,7 +142,9 @@ int totalFileSize;
     //Get all gene data
     [self getAllGeneNames];
         
-	[window addSubview:tBController.view];
+	//[window addSubview:tBController.view];
+    
+    self.window.rootViewController = tBController;
     [window makeKeyAndVisible];
     
 	return YES;
@@ -967,6 +969,15 @@ int totalFileSize;
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
     return YES;
 }
+
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return (UIInterfaceOrientationMaskAll);
+}
 @end
 
 @implementation UINavigationController (SGD_2) 
@@ -974,4 +985,12 @@ int totalFileSize;
     return YES;
 }
 
+-(BOOL)shouldAutorotate {
+    return self.topViewController.shouldAutorotate;
+}
+
+- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+{
+    return (UIInterfaceOrientationMaskAll);
+}
 @end

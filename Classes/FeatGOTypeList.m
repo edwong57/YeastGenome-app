@@ -60,6 +60,15 @@
     return YES;
 }
 
+//for ios6
+
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
 
 #pragma mark -
 #pragma mark View lifecycle

@@ -44,7 +44,6 @@
 
 -(void)webServiceCall:(NSString *)webserviceName;
 -(void)createProgressionAlertWithMessage:(NSString *)message;
-
 -(IBAction)pushedEmailButton:(id)sender;
 
 @end

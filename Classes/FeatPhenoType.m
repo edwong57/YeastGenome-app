@@ -35,6 +35,15 @@
     return YES;
 }
 
+//FOR IOS6
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
 /*Function is called when device is rotated and tableview cells are redisgn*/
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation 

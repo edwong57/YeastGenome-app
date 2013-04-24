@@ -36,6 +36,15 @@
     return YES;
 }
 
+//for IOS6
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
 /*Function is called when device is rotated and labels are align/oriented accordingly*/
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation 
 {
@@ -879,6 +888,7 @@
                     NSDictionary *InteractionsData =  [Interactions1 objectAtIndex:i];
                     
                     NSArray * interactions = [InteractionsData objectForKey:@"interactingGenes"];
+                 //   if ([interactions])
                     NSDictionary *interactiongenes = [interactions objectAtIndex:0];
                     publications = [interactiongenes objectForKey:@"publications"];
                     

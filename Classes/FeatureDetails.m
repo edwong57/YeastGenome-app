@@ -49,6 +49,15 @@
     return YES;
 }
 
+//FOR IOS6
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
 /*Function is called when device is rotated and implements 
  the orientation/alignment of the labels*/
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation 

@@ -37,6 +37,15 @@ NSString *pubMedID;
     return YES;
 }
 
+//IOS6
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
 /*Function is called when device is rotated and labels are align/oriented accordingly*/
 
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation 

@@ -41,8 +41,6 @@
 + (void)setCelCmName:(NSString *)newValue;
 + (NSString *)getCelCmName;
 
-
-
 + (void) initRecipient;
 + (void)setRecipient:(NSArray *)newValue;
 + (NSMutableArray *)getRecipient;

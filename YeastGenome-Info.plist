@@ -8,6 +8,8 @@
 	<string>YeastGenome</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>CFBundleIconFile</key>
 	<string>57X57.png</string>
 	<key>CFBundleIconFiles</key>
@@ -16,7 +18,22 @@
 		<string>114X114.png</string>
 		<string>72X72.png</string>
 		<string>114X114.png</string>
+		<string>144x144.png</string>
 	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>57X57.png</string>
+				<string>114X114.png</string>
+				<string>72X72.png</string>
+				<string>114X114.png</string>
+				<string>144x144.png</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>edu.yeastgenome.yeastgenome</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -26,7 +43,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.8</string>
+	<string>1.8.1</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleURLTypes</key>
@@ -41,8 +58,8 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1.8.0</string>
-	<key>CFBundleGetInfoString</key>
+	<string>1.8.1</string>
+	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -54,23 +71,25 @@
 	<string>Default-Portrait~ipad.png</string>
 	<key>UILaunchImageFile~iphone</key>
 	<string>Default.png</string>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarHidden~ipad</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleDefault</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>Portrait (top home button)
-</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-		<string>Portrait (top home button)
-</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 </dict>
 </plist>

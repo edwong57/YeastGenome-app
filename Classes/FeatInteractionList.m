@@ -41,6 +41,15 @@
     return YES;
 }
 
+//FOR IOS6
+-(BOOL)shouldAutorotate {
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
+
 #pragma mark -
 #pragma mark View lifecycle
 
@@ -109,7 +118,7 @@
 			featName = [NSString stringWithFormat:@"%@", [display objectAtIndex:0]];
 		}
 		
-		Reachability *rchbility = [[Reachability reachabilityWithHostName: @"yeastgenome.org"] retain];;
+		Reachability *rchbility = [[Reachability reachabilityWithHostName: @"yeastgenome.org"] retain];
 		NetworkStatus remoteHostStatus = [rchbility currentReachabilityStatus];
 		[rchbility release];
 		
@@ -118,21 +127,22 @@
 		{
 			//CALLING WEB-SERVICE HELPER CLASS OBJECT FOR CHECKING CONNECTIVITY TO SGD SERVER
 			[self createProgressionAlertWithMessage:@"Retrieving from SGD"];
-			
             
-            NSString *str = [NSString stringWithFormat:@"http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=<query+name=\"\"+model=\"genomic\"+view=\"Gene.interactions.annotationType+Gene.interactions.role+Gene.interactions.interactionType+Gene.interactions.name+Gene.interactions.shortName+Gene.interactions.interactingGenes.symbol+Gene.interactions.interactingGenes.secondaryIdentifier+Gene.interactions.experiment.publication.citation+Gene.interactions.experiment.publication.pubMedId+Gene.interactions.interactingGenes.headline+Gene.interactions.type.description+Gene.interactions.experimentType\"+longDescription=\"List+all+interactions+for+a+specified+gene.++Genes+include+Uncharacterized+and+Verified+ORFs,+pseudogenes,+transposable+element+genes,+RNAs,+and+genes+Not+in+Systematic+Sequence+of+S228C.++Caution:+all+reciprocal+interactions+will+be+duplicated.\"+sortOrder=\"Gene.interactions.annotationType+asc\"><constraint+path=\"Gene\"+op=\"LOOKUP\"+value=\"%@\"+extraValue=\"S.+cerevisiae\"/></query>&format=jsonobjects&source=YeastGenomeapp",featName];
+ //           @try { // new URL
+        
+             NSString *newStr = [NSString stringWithFormat: @"http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=<query+name=\"\"+model=\"genomic\"+view=\"Gene.primaryIdentifier+Gene.secondaryIdentifier+Gene.symbol+Gene.name+Gene.sgdAlias+Gene.organism.shortName+Gene.interactions.details.annotationType+Gene.interactions.details.phenotype+Gene.interactions.details.role1+Gene.interactions.details.type+Gene.interactions.details.experimentType+Gene.interactions.gene2.symbol+Gene.interactions.gene2.briefDescription+Gene.interactions.gene2.secondaryIdentifier+Gene.interactions.details.experiment.name+Gene.interactions.details.experiment.publication.citation+Gene.interactions.details.experiment.publication.pubMedId\"+longDescription=\"List+all+interactions+for+a+specified+gene.+Genes+include+Uncharacterized+and+Verified+ORFs,+pseudogenes,+transposable+element+genes,+RNAs,+and+genes+Not+in+Systematic+Sequence+of+S228C.+Caution:+all+reciprocal+interactions+will+be+duplicated.\"+sortOrder=\"Gene.primaryIdentifier+asc\"><constraint+path=\"Gene\"+op=\"LOOKUP\"+value=\"%@\"+extraValue=\"S.+cerevisiae\"/></query>&format=jsonobjects&source=YeastGenomeapp<", featName];
             
-            
-			[self webServiceCall:str];
-		}
-		
+      //      NSLog(@"string: %@", newStr);
+ 
+               [self webServiceCall:newStr];
+        }
 		//IF NOT REACHABLE THEN GIVING ALERT MESSAGE OF CONNECTION NOT AVAILABLE
 		else if(remoteHostStatus == NotReachable)
 		{
 			
 			UIAlertView* dialog = [[[UIAlertView alloc] init] retain];
 			[dialog setDelegate:self];
-            [dialog setTitle:@"No network"];
+            [dialog setTitle:@"No network available"];
             [dialog setMessage:@"Please check your network connection"];
 			[dialog addButtonWithTitle:@"Ok"];
 			[dialog show];	
@@ -152,11 +162,8 @@
     // For example: self.myOutlet = nil;
 }
 
-
-
-
 #pragma mark -
-#pragma mark Web Service Call 
+#pragma mark Web Service Call
 
 - (void)webServiceCall:(NSString *)webserviceName
 {
@@ -164,15 +171,65 @@
 	{
 		webServiceHelper *webhelper = [[webServiceHelper alloc]init];
 		[webhelper startConnection:webserviceName];
-		[webhelper setDelegate:self];
-		
+  
+    //    NSLog(@"before set webhelper delegate; response %i", webhelper.httpR);
+       [webhelper setDelegate:self];
+		[webhelper release];
+   // NSLog(@"set webhelper delegate; response %i", webhelper.httpR);
+ 
 	}
+    
 	@catch (NSException *e) {
-		NSLog(@"%@",[e description]);
+		NSLog(@"Web services error: %@",[e description]);
+        return;
 	}
 }
 
+// Implement this delegate method if the URL response is > 400
+-(void)alternateResponse:(NSInteger *) number {
+   // NSLog(@"alternativeUrl method: %i",  number);
+    
+  //  webServiceHelper.delegate = nil;
+    NSString *featName = [staticFunctionClass getGeneName];
+    NSArray *display = [featName componentsSeparatedByString: @"/"];
+    
+    if (display.count > 1) {
+        featName = [NSString stringWithFormat:@"%@", [display objectAtIndex:1]];
+    } else {
+        featName = [NSString stringWithFormat:@"%@", [display objectAtIndex:0]];
+    }
+    
+    NSLog(@"First URL failed for %@", featName);
+    
+    NSString *str = [NSString stringWithFormat:@"http://yeastmine.yeastgenome.org/yeastmine/service/query/results?query=<query+name=\"\"+model=\"genomic\"+view=\"Gene.interactions.annotationType+Gene.interactions.role+Gene.interactions.interactionType+Gene.interactions.name+Gene.interactions.shortName+Gene.interactions.interactingGenes.symbol+Gene.interactions.interactingGenes.secondaryIdentifier+Gene.interactions.experiment.publication.citation+Gene.interactions.experiment.publication.pubMedId+Gene.interactions.interactingGenes.headline+Gene.interactions.type.description+Gene.interactions.experimentType\"+longDescription=\"List+all+interactions+for+a+specified+gene.++Genes+include+Uncharacterized+and+Verified+ORFs,+pseudogenes,+transposable+element+genes,+RNAs,+and+genes+Not+in+Systematic+Sequence+of+S228C.++Caution:+all+reciprocal+interactions+will+be+duplicated.\"+sortOrder=\"Gene.interactions.annotationType+asc\"><constraint+path=\"Gene\"+op=\"LOOKUP\"+value=\"%@\"+extraValue=\"S.+cerevisiae\"/></query>&format=jsonobjects&source=YeastGenomeapp",featName];
+    
+    
+    [self webServiceCall:str];
+}
+
+- (void)quitWebServices:(NSString *) webserviceResponse {
+    @try {
+        if ([activityIndView isAnimating])
+			[activityIndView stopAnimating];
+        
+        
+        UIAlertView* dialog = [[[UIAlertView alloc] init] retain];
+        [dialog setDelegate:self];
+        [dialog setTitle:@"Server is temporarily unavailable."];
+        [dialog setMessage:@"Please try your search again shortly. If the problem persists, please contact SGD at sgd-helpdesk@lists.stanford.edu"];
+        [dialog addButtonWithTitle:@"Ok"];
+        [dialog show];
+        [dialog release];
+          
+    }
+    @catch (NSException *exception) {
+        NSLog(@"err: %@", exception);
+        
+    }
+   }
+
 // Implement the finish downloading delegate method
+
 - (void)finishedDownloading:(NSString *)strJSONResponse
 {
 	@try 
@@ -182,8 +239,9 @@
 		
 		@synchronized(self)
 		{
-         
-                //-----
+           
+          //  NSLog(@"in finished downloading, response: %d", [strJSONResponse length]);
+               //-----
             if ([strJSONResponse length] != 0)
             {
                 NSError *error;
@@ -199,6 +257,9 @@
                 NSArray *allValues = [dictionary allValues];
                 NSArray *allKeys = [dictionary allKeys];
                 
+             //   NSLog(@"all keys: %@", allKeys);
+            //    NSLog(@"all vals: %@", allValues);
+                
                 for (int i=0; i<[allValues count]; i++) 
                 {
                     if ([[allValues objectAtIndex:i] isEqual:[NSNull null] ]) 
@@ -210,65 +271,110 @@
             
             
             
-                NSArray *layOuts =  [dictionary objectForKey:@"results"]; 
+                NSArray *layOuts =  [dictionary objectForKey:@"results"];
+                int numLayouts = [layOuts count];
         
                 if ([layOuts count]!=0) 
                 {
                                 
                     NSArray *Interactions = [layOuts objectAtIndex:0];
                     NSArray *Interactions1 = [Interactions objectForKey:@"interactions"];
-            
-                    for (int i=0; i<[Interactions1 count];i++)
+                                        
+                     for (int i=0; i<[Interactions1 count];i++)
                     {
         
                         NSDictionary *InteractionsData =  [Interactions1 objectAtIndex:i];
+                        NSArray *intObjKeys = [InteractionsData allKeys];
+
+                        NSArray *interactions;
+                        NSDictionary *publication;
+                        NSDictionary *Experiment;
+                        NSDictionary *interactiongenes;
+                        NSString *action;
+                        NSString *featType;
+                        NSString *headline;
+                        NSString *exptType;
                         
-                        NSArray * interactions = [InteractionsData objectForKey:@"interactingGenes"];
-                        NSDictionary *interactiongenes = [interactions objectAtIndex:0];
+                        NSMutableDictionary *tmpInterDict = [[NSMutableDictionary alloc] init];
+           
+                        if ([intObjKeys containsObject:@"gene2"]) { // YeastMine 1.0 web services
+                            interactiongenes = [InteractionsData objectForKey:@"gene2"];
+                            
+                        } else {
+                            interactions = [InteractionsData
+                                            objectForKey:@"interactingGenes"];
+                            
+                            interactiongenes = [interactions objectAtIndex:0];                            
+                        }
                         
+                        if ([intObjKeys containsObject: @"details"]) { // YeastMine 1.0 web services
+                            NSArray *details = [InteractionsData objectForKey:@"details"];
+                            Experiment = [details objectAtIndex:0];
+                             
+                            NSDictionary *RefObj = [Experiment
+                                                    objectForKey:@"experiment"];
+                            
+                            publication = [RefObj
+                                           objectForKey:@"publication"];
+ 
+                            action = [Experiment objectForKey:@"role1"];
+                            featType = [Experiment objectForKey:@"type"] ;//
+                           headline =[interactiongenes objectForKey:@"briefDescription"];
+                            exptType = [Experiment objectForKey:@"experimentType"];
+                    
+                        } else { // YeastMine 0.8 web services
+                            
+                            Experiment = [InteractionsData
+                                          objectForKey:@"experiment"];
                         
-                        NSDictionary *Experiment = [InteractionsData objectForKey:@"experiment"];
-                        NSDictionary *publication = [Experiment objectForKey:@"publication"];
+                            publication = [Experiment
+                                           objectForKey:@"publication"];
+                            
+                            action = [InteractionsData objectForKey:@"role"];
+                            featType = [InteractionsData objectForKey:@"interactionType"];
+                            headline = [interactiongenes objectForKey:@"headline"];
+                            exptType = [InteractionsData objectForKey:@"experimentType"];
+ 
+                        }
+                        
                         NSString *citation = [publication objectForKey:@"citation"];
                         NSString *pubID = [publication objectForKey:@"pubMedId"];
-            
         
-            
                         NSString *gene = [interactiongenes objectForKey:@"symbol"];
-                        
+                         
                         if (gene == (id)[NSNull null] || gene.length == 0 ) gene = @"";
-
-                        NSMutableDictionary *tmpInterDict = [[NSMutableDictionary alloc] init];
-            
-                        [tmpInterDict setValue:[InteractionsData objectForKey:@"experimentType"] forKey:@"experimentType"];//
-                        [tmpInterDict setValue:[InteractionsData objectForKey:@"role"] forKey:@"action"];//
+ 
+                        [tmpInterDict setValue: exptType forKey:@"experimentType"];//
                         [tmpInterDict setValue:[interactiongenes objectForKey:@"secondaryIdentifier"] forKey:@"featureName"];//
                         [tmpInterDict setValue:gene forKey:@"geneName"];
+                    
+                        [tmpInterDict setValue: action forKey:@"action"];//
+                        [tmpInterDict setValue: featType forKey:@"featureType"];//
+                        [tmpInterDict setValue: headline forKey:@"intDescription"];
 
-                        [tmpInterDict setValue:[InteractionsData objectForKey:@"interactionType"] forKey:@"featureType"];//
-                        [tmpInterDict setValue:[interactiongenes objectForKey:@"headline"] forKey:@"intDescription"];
-                        [tmpInterDict setValue:[InteractionsData objectForKey:@"role"] forKey:@"action"];
+
+                       // [tmpInterDict setValue:[InteractionsData objectForKey:@"role"] forKey:@"action"];
                         [tmpInterDict setValue:citation forKey:@"citation"];
                         [tmpInterDict setValue:pubID forKey:@"pubMedId"];
                      
-                        
+                    
                         [allNewObjectsInteraction addObject:[tmpInterDict copy]];
+
                         [tmpInterDict release];
-                    }  
-                }
-                else
-                {
+                    }
+                 } else { // no results
+               //     NSLog(@"test");
+                   
                     UIAlertView* dialog = [[[UIAlertView alloc] init] retain];
                     [dialog setDelegate:self];
                     [dialog setTitle:@"Interaction details not found"];
-                    //[dialog setMessage:@"No match found,please try another query."];
-                    [dialog addButtonWithTitle:@"OK"];
+                     [dialog addButtonWithTitle:@"OK"];
                     [dialog show];	
                     [dialog release];
                 }
-            }
-            else
-            {
+            } else { // no JSON response
+              //  NSLog(@"test2");
+                
                 UIAlertView* dialog = [[[UIAlertView alloc] init] retain];
                 [dialog setDelegate:self];
                 [dialog setTitle:@"Interaction details not found"];
@@ -282,6 +388,7 @@
         
         [tblInteraction reloadData];
 	}
+ //   }
 	// now we are sure the download is complete
 	@catch (NSException *e) 
 	{

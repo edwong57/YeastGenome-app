@@ -91,6 +91,14 @@
     return YES;
 }
 
+//for iOS6
+
+- (BOOL)shouldAutorotate {
+return YES;
+}
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskAll;
+}
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.

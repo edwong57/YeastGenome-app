@@ -113,6 +113,11 @@
 		9E3FFBBE1488D893007038BB /* MyUITextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E3FFBBD1488D892007038BB /* MyUITextViewController.m */; };
 		9EC194BF14891C5500615FDA /* proAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC194BE14891C5500615FDA /* proAlertView.m */; };
 		BD3217001579834300AF4CB6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3216FF1579834300AF4CB6 /* Default.png */; };
+		BD343D9B172707540065FB02 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BD343D9A172707540065FB02 /* Default-568h@2x.png */; };
+		BD343D9D172707C90065FB02 /* Default-Portrait~ipad-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD343D9C172707C90065FB02 /* Default-Portrait~ipad-Portrait@2x~ipad.png */; };
+		BD343D9F172707DA0065FB02 /* Default-Portrait~ipad-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD343D9E172707DA0065FB02 /* Default-Portrait~ipad-Landscape@2x~ipad.png */; };
+		BD343DA1172707F00065FB02 /* Default-Portrait~ipad-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BD343DA0172707F00065FB02 /* Default-Portrait~ipad-Landscape~ipad.png */; };
+		BD343DA317270AF90065FB02 /* 144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = BD343DA217270AF90065FB02 /* 144x144.png */; };
 		BD49726B12284D9B000066F8 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD49726912284D9B000066F8 /* SearchViewController.m */; };
 		BD49726C12284D9B000066F8 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD49726A12284D9B000066F8 /* SearchViewController.xib */; };
 		BD49727012284DC7000066F8 /* FeatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD49726E12284DC7000066F8 /* FeatListViewController.m */; };
@@ -126,7 +131,7 @@
 		BD7C7DC2159398B3007A7CB7 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7C7DBB159398B3007A7CB7 /* FMDatabasePool.m */; };
 		BD7C7DC3159398B3007A7CB7 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7C7DBD159398B3007A7CB7 /* FMDatabaseQueue.m */; };
 		BD7C7DC4159398B3007A7CB7 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BD7C7DBF159398B3007A7CB7 /* FMResultSet.m */; };
-		BDBA3BFA15B0777100574CA2 /* SGD_2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BDBA3BF915B0777100574CA2 /* SGD_2.sqlite */; };
+		BDC783E816E6C535006E8E98 /* SGD_2.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = BD14989316E6C46F00D27346 /* SGD_2.sqlite */; };
 		BDEE5F01124D10A900BC920F /* starWhite.png in Resources */ = {isa = PBXBuildFile; fileRef = BDEE5EFF124D10A900BC920F /* starWhite.png */; };
 		E29043C813A6FDDB00A44085 /* FeatInteractionDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = E29043C613A6FDDB00A44085 /* FeatInteractionDetails.m */; };
 		E29043C913A6FDDB00A44085 /* FeatInteractionDetails.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29043C713A6FDDB00A44085 /* FeatInteractionDetails.xib */; };
@@ -277,8 +282,13 @@
 		9E3FFBBD1488D892007038BB /* MyUITextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUITextViewController.m; sourceTree = "<group>"; };
 		9EC194BD14891C5500615FDA /* proAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proAlertView.h; sourceTree = "<group>"; };
 		9EC194BE14891C5500615FDA /* proAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = proAlertView.m; sourceTree = "<group>"; };
+		BD14989316E6C46F00D27346 /* SGD_2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SGD_2.sqlite; sourceTree = "<group>"; };
 		BD3216FF1579834300AF4CB6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BD4887D91589419100EF68D8 /* dist.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = dist.plist; sourceTree = "<group>"; };
+		BD343D9A172707540065FB02 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BD343D9C172707C90065FB02 /* Default-Portrait~ipad-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		BD343D9E172707DA0065FB02 /* Default-Portrait~ipad-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		BD343DA0172707F00065FB02 /* Default-Portrait~ipad-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad-Landscape~ipad.png"; sourceTree = "<group>"; };
+		BD343DA217270AF90065FB02 /* 144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 144x144.png; sourceTree = "<group>"; };
 		BD49726812284D9B000066F8 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = ../SearchViewController.h; sourceTree = "<group>"; };
 		BD49726912284D9B000066F8 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchViewController.m; path = ../SearchViewController.m; sourceTree = "<group>"; };
 		BD49726A12284D9B000066F8 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
@@ -301,7 +311,6 @@
 		BD7C7DBE159398B3007A7CB7 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		BD7C7DBF159398B3007A7CB7 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		BD7C7E231593C38A007A7CB7 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
-		BDBA3BF915B0777100574CA2 /* SGD_2.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = SGD_2.sqlite; sourceTree = "<group>"; };
 		BDEE5EFF124D10A900BC920F /* starWhite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = starWhite.png; sourceTree = "<group>"; };
 		E29043C513A6FDDB00A44085 /* FeatInteractionDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatInteractionDetails.h; sourceTree = "<group>"; };
 		E29043C613A6FDDB00A44085 /* FeatInteractionDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatInteractionDetails.m; sourceTree = "<group>"; };
@@ -359,12 +368,16 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BD343DA217270AF90065FB02 /* 144x144.png */,
+				BD343DA0172707F00065FB02 /* Default-Portrait~ipad-Landscape~ipad.png */,
+				BD343D9E172707DA0065FB02 /* Default-Portrait~ipad-Landscape@2x~ipad.png */,
+				BD343D9C172707C90065FB02 /* Default-Portrait~ipad-Portrait@2x~ipad.png */,
+				BD343D9A172707540065FB02 /* Default-568h@2x.png */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				BD4887D91589419100EF68D8 /* dist.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -517,7 +530,7 @@
 		9AA3A2691320ADFA007CADAE /* DBs */ = {
 			isa = PBXGroup;
 			children = (
-				BDBA3BF915B0777100574CA2 /* SGD_2.sqlite */,
+				BD14989316E6C46F00D27346 /* SGD_2.sqlite */,
 			);
 			name = DBs;
 			sourceTree = "<group>";
@@ -670,6 +683,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = SGD;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "YeastGenome" */;
@@ -696,6 +710,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC783E816E6C535006E8E98 /* SGD_2.sqlite in Resources */,
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				BD49726C12284D9B000066F8 /* SearchViewController.xib in Resources */,
 				BD49727112284DC7000066F8 /* FeatListViewController.xib in Resources */,
@@ -769,7 +784,11 @@
 				FA65E79814D27F9900B4E2E2 /* Default-Landscape~ipad.png in Resources */,
 				BD3217001579834300AF4CB6 /* Default.png in Resources */,
 				BD6B774C158A91A90084C536 /* Default@2x.png in Resources */,
-				BDBA3BFA15B0777100574CA2 /* SGD_2.sqlite in Resources */,
+				BD343D9B172707540065FB02 /* Default-568h@2x.png in Resources */,
+				BD343D9D172707C90065FB02 /* Default-Portrait~ipad-Portrait@2x~ipad.png in Resources */,
+				BD343D9F172707DA0065FB02 /* Default-Portrait~ipad-Landscape@2x~ipad.png in Resources */,
+				BD343DA1172707F00065FB02 /* Default-Portrait~ipad-Landscape~ipad.png in Resources */,
+				BD343DA317270AF90065FB02 /* 144x144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,7 +858,6 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = "~/Documents/SGD_docs/yeastgenome-app/dist.plist";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				COPY_PHASE_STRIP = YES;
@@ -847,11 +865,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SGD_Prefix.pch;
-				INFOPLIST_FILE = "YeastGenome-Info.plist";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "YeastGenome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = YeastGenome;
-				PROVISIONING_PROFILE = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
+				PROVISIONING_PROFILE = "37D6410F-ECC5-4499-BA1C-2036B8EEB8E5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "37D6410F-ECC5-4499-BA1C-2036B8EEB8E5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -866,20 +886,21 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = "~/Documents/SGD_docs/yeastgenome-app/dist.plist";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Cherry";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Cherry";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Cherry (B4YSBP95YU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Cherry (B4YSBP95YU)";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SGD_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				GENERATE_PROFILING_CODE = YES;
-				INFOPLIST_FILE = "YeastGenome-Info.plist";
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "YeastGenome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = YeastGenome;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "A8D8757F-6687-4759-B677-36288FD5EF85";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A8D8757F-6687-4759-B677-36288FD5EF85";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -893,7 +914,7 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				COPY_PHASE_STRIP = NO;
@@ -901,6 +922,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DEBUGGING_SYMBOLS = full;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -915,11 +937,11 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "YeastGenome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
+				PROVISIONING_PROFILE = "5F5274C5-C3DF-4E85-8499-74E1ED920FF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5F5274C5-C3DF-4E85-8499-74E1ED920FF0";
 				SDKROOT = iphoneos;
 				STRIP_STYLE = "non-global";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -934,17 +956,18 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = "~/Documents/SGD_docs/yeastgenome-app/dist.plist";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Cherry";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				COPY_PHASE_STRIP = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SGD_Prefix.pch;
-				INFOPLIST_FILE = "YeastGenome-Info.plist";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "";
+				"INFOPLIST_FILE[sdk=*]" = "YeastGenome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = YeastGenome;
-				PROVISIONING_PROFILE = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
+				PROVISIONING_PROFILE = "37D6410F-ECC5-4499-BA1C-2036B8EEB8E5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "37D6410F-ECC5-4499-BA1C-2036B8EEB8E5";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -958,11 +981,12 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = dist.plist;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Cherry";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Cherry";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -979,9 +1003,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "YeastGenome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C638CA1F-FC72-4368-A9E8-08A9F992516F";
+				PROVISIONING_PROFILE = "6B416171-2B8B-435F-9CD8-F2BB1A8191AE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B416171-2B8B-435F-9CD8-F2BB1A8191AE";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -994,11 +1017,12 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Cherry";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Cherry";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mike Cherry (7EHE24BAMY)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_ENABLE_OBJC_GC = supported;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1013,11 +1037,11 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VALUE = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "YeastGenome-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
-				PROVISIONING_PROFILE = "6B416171-2B8B-435F-9CD8-F2BB1A8191AE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B416171-2B8B-435F-9CD8-F2BB1A8191AE";
+				PROVISIONING_PROFILE = "5F5274C5-C3DF-4E85-8499-74E1ED920FF0";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5F5274C5-C3DF-4E85-8499-74E1ED920FF0";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

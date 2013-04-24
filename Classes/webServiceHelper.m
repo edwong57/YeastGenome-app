@@ -12,7 +12,7 @@
 
 @implementation webServiceHelper
 
-@synthesize webData,delegate;
+@synthesize webData, delegate, httpR;
 
 int bytesCount;
 #pragma mark -
@@ -32,19 +32,28 @@ int bytesCount;
 	NSURLConnection *theConnection = [NSURLConnection connectionWithRequest:request delegate:self];
 	[myWebserverURL release];
     
-	if( theConnection )
-	{
+	if( theConnection ) {
 		
 		if (webData != nil) {
 			webData = nil;
 		}
         
         bytesCount = 0;
-		webData = [[NSMutableData data] retain];
-	}
-	else
-	{
-		[delegate finishedDownloading:[NSString stringWithFormat:@""]];
+            
+        webData = [[NSMutableData data] retain];
+        NSLog(@"connection made");
+         
+ 	} else {
+        NSLog(@"No data returned");
+    
+        UIAlertView* dialog = [[[UIAlertView alloc] init] retain];
+        [dialog setDelegate:self];
+        [dialog setTitle:@"YeastMine is temporarily unavailable."];
+        [dialog setMessage:@"Please try your search again shortly. If the problem persists, please contact SGD at sgd-  helpdesk@lists.stanford.edu"];
+        [dialog addButtonWithTitle:@"Ok"];
+        [dialog show];
+        [dialog release];
+//[delegate finishedDownloading:[NSString stringWithFormat:@""]];
 	}
 	
 }
@@ -72,10 +81,17 @@ int bytesCount;
         
         bytesCount = 0;
 		webData = [[NSMutableData data] retain];
-	}
-	else
-	{
-		[delegate finishedDownloading:[NSString stringWithFormat:@""]];
+        
+        NSLog(@"webData: %@", webData);
+        
+      
+       // [delegate finishedDownloading:[NSString stringWithFormat:@""]];
+
+ 	}
+else
+{ NSLog(@"Err in startconnectionwithoutencoding");
+    
+//		[delegate finishedDownloading:[NSString stringWithFormat:@""]];
 	}
 }
 
@@ -83,41 +99,57 @@ int bytesCount;
 -(void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
 {
 	NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-	
-	if ([httpResponse statusCode] >= 400)
-	{
-		// do error handling here
-		[delegate finishedDownloading:[NSString stringWithFormat:@""]];
-	} 
-	else {
-	}
-	
+    
+    httpR = [httpResponse statusCode];
+   
+	if (httpR >= 400) {
+ 		// do error handling here // add something to go back
+        
+        NSLog(@"Response error: %d", httpR);
+        [delegate alternateResponse:httpR];
+ 
+        
+	} else {
+        NSLog(@"Response: %d", [httpResponse statusCode]);
+
 	// Check for webdata and init webdata
 	if (webData != nil) {
 		webData = nil;
 		
+        bytesCount = 0;
+
 	}
 	webData = [[NSMutableData data] retain];
+    
+    }
 }	
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
-	bytesCount = bytesCount + [data length];
+//	NSLog(@"pre bytes count: %d", bytesCount);
+  //  NSLog(@" data: %@", temp);
+    bytesCount = bytesCount + [data length];
 
 	[webData appendData:data];
+//    NSLog(@"got data %d", bytesCount);
 }
+
+
 
 -(void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
 	@try
 	{
+        NSLog(@"connection failed: %@", error);
         
+        [delegate quitWebServices:[NSString stringWithFormat:@""]];
         
-		[delegate finishedDownloading:[NSString stringWithFormat:@""]];
+		//[delegate finishedDownloading:[NSString stringWithFormat:@""]];
         
 	}
 	@catch (NSException *e) {
 		NSLog(@"%@",[e description]);
+   //     return [NSString stringWithFormat:(@"%@", e)];
 	}
 }
 
@@ -125,16 +157,27 @@ int bytesCount;
 {
 	@try
 	{
+        NSLog(@"connection done retrieving data, %d", [webData length]);
                
 		if ([webData length] != 0)
 		{
-			NSString *jsonResponse = [[NSString alloc] initWithBytes: [webData mutableBytes] length:[webData length] encoding:NSUTF8StringEncoding];
 
-			[delegate finishedDownloading:jsonResponse]; // notify delegate download finished
-		}
+                if (httpR > 200) {
+   
+                    [delegate alternateResponse:httpR];
+      
+                } else {
+                    NSString *jsonResponse = [[NSString alloc] initWithBytes:
+                                     [webData mutableBytes] length:[webData length] encoding:NSUTF8StringEncoding];
+
+                    [delegate finishedDownloading:jsonResponse]; // notify delegate download finished
+                }
+      }
 		else
 		{
 			//ERROR HANDLING
+            NSLog(@"finished loading err");
+            
 			[delegate finishedDownloading:@""];
 		}
 		
